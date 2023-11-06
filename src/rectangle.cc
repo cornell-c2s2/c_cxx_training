@@ -7,7 +7,7 @@
 //=============================================================
 // PRACTICE TASK:
 //
-// Implement the functions contained in the CRTCRT_Rectangle class
+// Implement the functions contained in the C2S2_Rectangle class
 //
 // The default constructor and a member function are done for
 // you as examples
@@ -17,7 +17,7 @@
 // Default Constructor
 //-----------------------------------------------------
 
-CRT_Rectangle::CRT_Rectangle()
+C2S2_Rectangle::C2S2_Rectangle()
 {
     length = new int;
     width  = new int;
@@ -47,7 +47,7 @@ CRT_Rectangle::CRT_Rectangle()
 // get_length
 //-----------------------------------------------------
 
-int CRT_Rectangle::get_length() const
+int C2S2_Rectangle::get_length() const
 {
     return *(length);
 }

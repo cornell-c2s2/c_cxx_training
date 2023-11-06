@@ -9,7 +9,7 @@
 
 enum colors { Red, Green, Yellow, Blue, Magenta, Cyan };
 
-class CRT_Rectangle{
+class C2S2_Rectangle{
   private:
     int* length;
     int* width;
@@ -18,12 +18,12 @@ class CRT_Rectangle{
   public:
 
     // Constructors
-    CRT_Rectangle();
-    CRT_Rectangle( int init_length, int init_width, colors init_color );
-    CRT_Rectangle( const CRT_Rectangle& src );
+    C2S2_Rectangle();
+    C2S2_Rectangle( int init_length, int init_width, colors init_color );
+    C2S2_Rectangle( const C2S2_Rectangle& src );
 
     // Destructor
-    ~CRT_Rectangle();
+    ~C2S2_Rectangle();
 
     // Getter functions
     int    get_length() const;
@@ -36,11 +36,11 @@ class CRT_Rectangle{
     void set_color ( colors new_color );
 
     // Overloaded operators
-    CRT_Rectangle operator*( int factor );           // Scales the rectangle
-    CRT_Rectangle operator=( const CRT_Rectangle& src ); // Assigns to another Rectangle
+    C2S2_Rectangle operator*( int factor );           // Scales the rectangle
+    C2S2_Rectangle operator=( const C2S2_Rectangle& src ); // Assigns to another Rectangle
 };
 
 // Utility function for printing rectangles - overload << operator
-std::ostream& operator<<( std::ostream& os, const CRT_Rectangle& rect );
+std::ostream& operator<<( std::ostream& os, const C2S2_Rectangle& rect );
 
 #endif // SRC_RECTANGLE

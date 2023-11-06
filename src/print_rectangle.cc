@@ -11,7 +11,7 @@
 
 #include <windows.h>
 
-void set_text_color( std::ostream& os, const CRT_Rectangle& rect, HANDLE hndl )
+void set_text_color( std::ostream& os, const C2S2_Rectangle& rect, HANDLE hndl )
 {
     // Use switch statement to set color correctly
     switch( rect.get_color() ){
@@ -37,7 +37,7 @@ void set_text_color( std::ostream& os, const CRT_Rectangle& rect, HANDLE hndl )
     }
 }
 
-std::ostream& operator<<( std::ostream& os, const CRT_Rectangle& rect )
+std::ostream& operator<<( std::ostream& os, const C2S2_Rectangle& rect )
 {
     // Get information about the system
     HANDLE hndl = NULL;
@@ -69,7 +69,7 @@ std::ostream& operator<<( std::ostream& os, const CRT_Rectangle& rect )
 
 #else // Linux
 
-void set_text_color( std::ostream& os, const CRT_Rectangle& rect )
+void set_text_color( std::ostream& os, const C2S2_Rectangle& rect )
 {
     // Use switch statement to set color correctly
     switch( rect.get_color() ){
@@ -95,7 +95,7 @@ void set_text_color( std::ostream& os, const CRT_Rectangle& rect )
     }
 }
 
-std::ostream& operator<<( std::ostream& os, const CRT_Rectangle& rect )
+std::ostream& operator<<( std::ostream& os, const C2S2_Rectangle& rect )
 {
 
     set_text_color( os, rect );

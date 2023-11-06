@@ -8,7 +8,7 @@
 
 int main( void )
 {
-    CRT_Rectangle test1;
+    C2S2_Rectangle test1;
 
     test1.set_length( 1 );
     test1.set_width ( 2 );
@@ -16,7 +16,7 @@ int main( void )
 
     //-----------------------------------------------------
 
-    CRT_Rectangle test2 = test1;
+    C2S2_Rectangle test2 = test1;
     assert( test2.get_length() == 1 );
     assert( test2.get_width()  == 2 );
     assert( test2.get_color()  == Blue );
@@ -31,7 +31,7 @@ int main( void )
 
     //-----------------------------------------------------
 
-    CRT_Rectangle test3;
+    C2S2_Rectangle test3;
     test3 = test2;
 
     assert( test3.get_length() == 3 );
@@ -50,15 +50,15 @@ int main( void )
     //-----------------------------------------------------
     // Printing Results
 
-    std::cout << "Test1: A CRT_Rectangle of length " << test1.get_length() ;
+    std::cout << "Test1: A C2S2_Rectangle of length " << test1.get_length() ;
     std::cout << " and width " << test1.get_width() << std::endl;
     std::cout << test1;
 
-    std::cout << "Test2: A CRT_Rectangle of length " << test2.get_length() ;
+    std::cout << "Test2: A C2S2_Rectangle of length " << test2.get_length() ;
     std::cout << " and width " << test2.get_width() << std::endl;
     std::cout << test2;
 
-    std::cout << "Test3: A CRT_Rectangle of length " << test3.get_length() ;
+    std::cout << "Test3: A C2S2_Rectangle of length " << test3.get_length() ;
     std::cout << " and width " << test3.get_width() << std::endl;
     std::cout << test3;
 
